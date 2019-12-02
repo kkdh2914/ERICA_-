@@ -1,3 +1,6 @@
 #include <stdio.h>
 #inclde <stdlib.h>
 #include <time.h>
+
+#define randomize() srand((unsigned)time(NULL))
+#define random(n) (rand() % (n)) 
