@@ -4,3 +4,7 @@
 
 #define randomize() srand((unsigned)time(NULL))
 #define random(n) (rand() % (n)) 
+
+
+int run_game() {
+int nRandom, count, nlnput;
