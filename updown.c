@@ -11,7 +11,7 @@ int run_game() {
 	{
 		printf("Please enter a number\n");
 
-		scanf_s("%d"%nlnput);
+		scanf_s("%d",&nlnput);
 
 		if (nRandom = nlnput)
 			break;
