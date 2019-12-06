@@ -11,7 +11,18 @@ int run_game() {
 	{
 		printf("Please enter a number\n");
 
-		scanf_s("%d",&nlnput);
+		scanf_s("%d"%nlnput);
 
-		if (nRandom == nlnput)
+		if (nRandom = nlnput)
 			break;
+
+		if (nRandom > nlnput)
+			print("Up\n");
+		
+		else
+			printf("Down\n");
+	}
+	return count;
+}
+
+
