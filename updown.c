@@ -13,7 +13,7 @@ int run_game() {
 
 		scanf_s("%d",&nlnput);
 
-		if (nRandom = nlnput)
+		if (nRandom == nlnput)
 			break;
 
 		if (nRandom > nlnput)
@@ -36,7 +36,7 @@ int main()
 	{
 		count = run_game();
 		printf("정답입니다.%d회만에 맞추셨습니다.\n, count);
-		printf("다시 시작하시겠습니까? (1이면 다시, 이외의 수면 종료\n");
+		printf("다시 시작하시겠습니까? (1이면 다시, 이외의 수면 종료\n"));
 		scanf_s("%d", &nInput);
 	} while (nInput == 1);
 
