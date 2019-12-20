@@ -6,17 +6,17 @@
 #define random(n) (rand() % (n))
 
 int run_game() {
-	int nRandom, count, nlnput;
+	int nRandom, count, nInput;
 	for (nRandom = random(100), count = 1;; ++count)
 	{
 		printf("Please enter a number\n");
 
-		scanf_s("%d",&nlnput);
+		scanf("%d",&nInput);
 
-		if (nRandom == nlnput)
+		if (nRandom == nInput)
 			break;
 
-		if (nRandom > nlnput)
+		if (nRandom > nInput)
 			printf("Up\n");
 		
 		else
@@ -27,7 +27,7 @@ int run_game() {
 
 int main()
 {
-	int nlnput, count;
+	int nInput, count;
 
 	randomize();
 	printf("업다운 프로그램을 실행합니다.\n");
@@ -35,10 +35,12 @@ int main()
 	do
 	{
 		count = run_game();
-		printf("정답입니다.%d회만에 맞추셨습니다.\n, count);
-		printf("다시 시작하시겠습니까? (1이면 다시, 이외의 수면 종료\n"));
-		scanf_s("%d", &nInput);
+		printf("정답입니다.%d회만에 맞추셨습니다.\n", count);
+		printf("다시 시작하시겠습니까? (1이면 다시, 이외의 수면 종료\n");
+		scanf("%d", &nInput);
 	} while (nInput == 1);
 
 	printf("종료합니다.");
+	
 	return 0;
+}
